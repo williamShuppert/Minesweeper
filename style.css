@@ -1,0 +1,126 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    background: gray;
+}
+
+:root {
+    --board-dimension: 8;
+}
+
+#settings-bar {
+    transition: .5s;
+    transform: translate(-100%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 2rem;
+    position: absolute;
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#toggle-menu {
+    transition: .5s;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 6;
+}
+
+.board-dimension h1 {
+    grid-area: title;
+}
+
+.board-dimension {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    border: white 4px solid;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+#dimension-button {
+    grid-area: button;
+}
+
+#board {
+    background: gray;
+    width: 100vw;
+    height: 100vh;
+    display: grid;  
+    justify-content: center;
+    align-content: center;
+}
+
+.cell {
+    cursor: pointer;
+    width: calc( (80vh - (2px * var(--board-dimension))) / var(--board-dimension) );
+    height: calc( (80vh - (2px * var(--board-dimension))) / var(--board-dimension) );
+    background: white;
+    margin: 1px;
+}
+
+.show {
+    cursor: default;
+    font-size: calc(100vh/var(--board-dimension));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(161, 161, 161);
+}
+
+.flag {
+    cursor: pointer;
+    background-size: cover;
+    background: rgb(255, 135, 135);
+    /*background-image: url("https://iconarchive.com/download/i52449/custom-icon-design/pretty-office-8/Flag-red.ico");*/
+}
+
+.warning {
+    cursor: pointer;
+    background: rgb(255, 255, 180);
+}
+
+#end-game-screen {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+}
+
+button {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: white;
+    border: white 4px solid;
+    background: none;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.show-end-screen {
+    display: flex !important;
+}

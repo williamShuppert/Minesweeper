@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="toggle-menu">Menu</button>
+    <div id="settings-bar">
+        <h1>Minesweeper</h1>
+        <hr>
+        <button id="restart-button">Restart</button>
+        <div>
+            <h2>Board Dimensions</h2>
+            <hr>
+            <button id="dimension-button-decrease">-</button>
+            <button id="dimension-button-increase">+</button>
+            <div class="board-dimension" id="board-dimension-info">10x10</div>
+        </div>
+    </div>
+    <div id="board" oncontextmenu="return false">
+    </div>
+    <div id="end-game-screen">
+        <div id="end-game-message">You Lose, Loser</div>
+        <button id="play-again-button">Play Again</button>
+    </div>
+</body>
+</html>
