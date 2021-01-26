@@ -4,4 +4,4 @@ I made this for fun and also to teach myself a little bit more about HTML/CSS/Ja
 
 ## Screenshot
 
-![minesweeper](https://github.com/williamShuppert/Minesweeper/blob/main/minesweeper.PNG)
+![minesweeper](https://github.com/williamShuppert/Minesweeper/blob/master/minesweeper.PNG)
